@@ -1,29 +1,11 @@
 {
-  "generatedAt": "2026-03-10T01:53:28.951Z",
+  "generatedAt": "2026-03-10T02:30:24.604Z",
   "items": [
     {
       "date": "2026-03-10",
       "title": "📰 Tech Daily Digest - 2026/3/10",
       "articleCount": 16,
       "md": "data/tech-digest-2026-03-10-zh.md"
-    },
-    {
-      "date": "2026-03-09",
-      "title": "📰 Tech Daily Digest - 2026/3/9",
-      "articleCount": 234,
-      "md": "data/tech-digest-2026-03-09-zh.md"
-    },
-    {
-      "date": "2026-03-08",
-      "title": "📰 Tech Daily Digest - 2026/3/9",
-      "articleCount": 234,
-      "md": "data/tech-digest-2026-03-08-zh.md"
-    },
-    {
-      "date": "2026-03-07",
-      "title": "📰 Tech Daily Digest - 2026/3/7",
-      "articleCount": 262,
-      "md": "data/tech-digest-2026-03-07-zh.md"
     }
   ]
 }
