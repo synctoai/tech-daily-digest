@@ -1,0 +1,12 @@
+{
+  "name": "tech-daily-digest",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Daily tech digest generator with GitHub Pages viewer",
+  "type": "module",
+  "scripts": {
+    "digest": "node scripts/digest-complete.mjs --hours 24 --top-n 15 --lang zh --with-ai",
+    "build:pages": "node scripts/build-pages.mjs",
+    "sync:pages": "node scripts/sync-pages-and-push.mjs"
+  }
+}

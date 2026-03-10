@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Daily Digest Reports</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Tech Daily Digest</h1>
+    <p>按日期查看每日科技资讯（GitHub Pages）</p>
+  </header>
+
+  <main>
+    <aside>
+      <div class="filters">
+        <button id="lang-all" class="chip active" data-lang="all">全部</button>
+        <button id="lang-zh" class="chip" data-lang="zh">中文</button>
+        <button id="lang-en" class="chip" data-lang="en">English</button>
+      </div>
+      <h2>日期列表</h2>
+      <ul id="list"></ul>
+    </aside>
+
+    <section>
+      <div id="meta" class="meta"></div>
+      <article id="content">加载中...</article>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
