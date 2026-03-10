@@ -1,0 +1,40 @@
+name: Refresh Tech Digest Pages Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 每天 09:15 Asia/Shanghai ~= 01:15 UTC
+    - cron: '15 1 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-pages:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build pages data
+        run: npm run build:pages
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add docs/data
+            git commit -m "chore: refresh pages data"
+            git push
+          else
+            echo "No changes to commit"
+          fi
