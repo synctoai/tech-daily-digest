@@ -16,6 +16,8 @@ const CONFIG = {
   timeout: 15000,
   concurrency: 10,
   translateConcurrency: 6,
+  summaryFetchConcurrency: 4,
+  summaryFetchTimeout: 12000,
   cacheDir: join(__dirname, '..', '.cache'),
   outputDir: join(__dirname, '..', 'output'),
   zhTranslateCacheFile: join(__dirname, '..', '.cache', 'zh-translation-cache.json')
@@ -56,6 +58,20 @@ function truncate(text = '', maxLen = 180) {
 function shouldTranslateToZh(text) {
   const t = compactText(text);
   return /[A-Za-z]/.test(t) && !/[\u4e00-\u9fff]/.test(t);
+}
+
+function parsePublishedDate(value) {
+  const v = compactText(value);
+  if (!v) return null;
+  const d = new Date(v);
+  if (Number.isNaN(d.getTime())) return null;
+  return d;
+}
+
+function ensureSentence(text) {
+  const t = compactText(text);
+  if (!t) return '';
+  return /[。！？.!?]$/.test(t) ? t : `${t}。`;
 }
 
 async function loadZhTranslationCache() {
@@ -156,15 +172,16 @@ function parseArticles(xmlText, feed) {
   for (const item of rssItems) {
     const title = extractTag(item, 'title');
     const link = extractTag(item, 'link');
-    const pubDate = extractTag(item, 'pubDate');
-    const desc = extractTag(item, 'description');
+    const pubDate =
+      extractTag(item, 'pubDate') || extractTag(item, 'dc:date') || extractTag(item, 'published');
+    const desc = extractTag(item, 'description') || extractTag(item, 'content:encoded');
 
     if (title && link) {
       articles.push({
         title: cleanText(title),
         titleZh: cleanText(title),
         link: link.trim(),
-        pubDate: new Date(pubDate || Date.now()),
+        pubDate: parsePublishedDate(pubDate),
         description: cleanText(desc).slice(0, 500),
         hotSummaryZh: '',
         source: feed.name,
@@ -179,7 +196,8 @@ function parseArticles(xmlText, feed) {
     for (const entry of atomEntries) {
       const title = extractTag(entry, 'title');
       const linkMatch = entry.match(/<link[^>]*href=["']([^"']+)["']/i);
-      const updated = extractTag(entry, 'updated') || extractTag(entry, 'published');
+      const updated =
+        extractTag(entry, 'updated') || extractTag(entry, 'published') || extractTag(entry, 'dc:date');
       const summary = extractTag(entry, 'summary') || extractTag(entry, 'content');
 
       if (title && linkMatch) {
@@ -187,7 +205,7 @@ function parseArticles(xmlText, feed) {
           title: cleanText(title),
           titleZh: cleanText(title),
           link: linkMatch[1],
-          pubDate: new Date(updated || Date.now()),
+          pubDate: parsePublishedDate(updated),
           description: cleanText(summary).slice(0, 500),
           hotSummaryZh: '',
           source: feed.name,
@@ -215,7 +233,8 @@ function cleanText(text) {
   // 移除 CDATA
   const cdataMatch = text.match(/<!\[CDATA\[([\s\S]*?)\]\]>/);
   if (cdataMatch) text = cdataMatch[1];
-  // 移除 HTML 标签
+  // 解码常见实体，再移除 HTML 标签
+  text = decodeHtmlEntities(text);
   text = text.replace(/<[^>]+>/g, ' ');
   // 规范化空白
   text = text.replace(/\s+/g, ' ').trim();
@@ -225,7 +244,7 @@ function cleanText(text) {
 // 文章处理
 function filterArticles(articles, hours) {
   const cutoff = new Date(Date.now() - hours * 60 * 60 * 1000);
-  return articles.filter((a) => a.pubDate >= cutoff);
+  return articles.filter((a) => a.pubDate instanceof Date && !Number.isNaN(a.pubDate.getTime()) && a.pubDate >= cutoff);
 }
 
 function deduplicate(articles) {
@@ -254,6 +273,79 @@ function categorizeArticle(article) {
   return 'OTHER';
 }
 
+function decodeHtmlEntities(text = '') {
+  return text
+    .replaceAll('&nbsp;', ' ')
+    .replaceAll('&amp;', '&')
+    .replaceAll('&lt;', '<')
+    .replaceAll('&gt;', '>')
+    .replaceAll('&quot;', '"')
+    .replaceAll('&#39;', "'");
+}
+
+function extractMetaDescription(html) {
+  const metaTags = html.match(/<meta[^>]+>/gi) || [];
+  for (const tag of metaTags) {
+    const name = (tag.match(/(?:name|property)=['"]([^'"]+)['"]/i)?.[1] || '').toLowerCase();
+    if (!['description', 'og:description', 'twitter:description'].includes(name)) continue;
+
+    const content = tag.match(/content=['"]([\s\S]*?)['"]/i)?.[1] || '';
+    const cleaned = compactText(decodeHtmlEntities(content));
+    if (cleaned.length >= 30) return cleaned;
+  }
+  return '';
+}
+
+function extractFirstParagraph(html) {
+  const matches = html.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi);
+  for (const m of matches) {
+    const cleaned = compactText(decodeHtmlEntities(cleanText(m[1])));
+    if (cleaned.length >= 50) return cleaned;
+  }
+  return '';
+}
+
+async function fetchArticleSnippet(article) {
+  const localDesc = compactText(article.description);
+  if (localDesc.length >= 60) return localDesc;
+
+  try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), CONFIG.summaryFetchTimeout);
+
+    const response = await fetch(article.link, {
+      signal: controller.signal,
+      headers: { 'User-Agent': 'TechDailyDigest/1.0' }
+    });
+
+    clearTimeout(timeout);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+    const html = await response.text();
+    const metaDescription = extractMetaDescription(html);
+    if (metaDescription) return metaDescription;
+
+    const firstParagraph = extractFirstParagraph(html);
+    if (firstParagraph) return firstParagraph;
+  } catch {
+    // ignore and fallback below
+  }
+
+  return localDesc || article.title;
+}
+
+function buildHotSummaryParagraphZh(titleZh, summaryZh) {
+  const titleText = compactText(titleZh) || '该文';
+  const summaryText = compactText(summaryZh);
+
+  if (!summaryText || summaryText.length < 18) {
+    return `这篇文章围绕《${titleText}》展开，介绍了作者的核心观点与实践经验，适合快速了解相关主题。`;
+  }
+
+  const normalized = ensureSentence(truncate(summaryText, 220));
+  return `这篇文章围绕《${titleText}》展开，核心要点是：${normalized}`;
+}
+
 async function localizeArticlesForChinese(articles, topN, translationCache) {
   const titleMap = await translateManyToZh(articles.map((a) => a.title), translationCache);
 
@@ -262,13 +354,26 @@ async function localizeArticlesForChinese(articles, topN, translationCache) {
   }
 
   const hotArticles = articles.slice(0, Math.min(topN, articles.length));
-  const summarySources = hotArticles.map((a) => a.description || a.title);
-  const summaryMap = await translateManyToZh(summarySources, translationCache);
+  const snippetSources = new Map();
+
+  let cursor = 0;
+  async function worker() {
+    while (cursor < hotArticles.length) {
+      const idx = cursor++;
+      const article = hotArticles[idx];
+      const snippet = await fetchArticleSnippet(article);
+      snippetSources.set(article.link, snippet);
+    }
+  }
+
+  await Promise.all(Array.from({ length: CONFIG.summaryFetchConcurrency }, () => worker()));
+
+  const summaryMap = await translateManyToZh([...snippetSources.values()], translationCache);
 
   for (const article of hotArticles) {
-    const source = compactText(article.description || article.title);
-    const translatedSummary = summaryMap.get(source) || source;
-    article.hotSummaryZh = truncate(translatedSummary, 200);
+    const sourceSnippet = snippetSources.get(article.link) || article.description || article.title;
+    const translatedSummary = summaryMap.get(compactText(sourceSnippet)) || sourceSnippet;
+    article.hotSummaryZh = buildHotSummaryParagraphZh(article.titleZh || article.title, translatedSummary);
   }
 }
 
@@ -319,8 +424,10 @@ function generateReport(articles, options) {
     report += `- ${lang === 'zh' ? '来源' : 'Source'}: ${a.source}\n`;
 
     if (lang === 'zh') {
-      const summary = a.hotSummaryZh || truncate(a.description || displayTitle(a), 200);
-      report += `- 中文摘要: ${summary}\n`;
+      const summary =
+        a.hotSummaryZh ||
+        buildHotSummaryParagraphZh(displayTitle(a), truncate(a.description || displayTitle(a), 200));
+      report += `- 中文总结：${summary}\n`;
     } else if (a.description) {
       report += `- ${truncate(a.description, 200)}\n`;
     }
@@ -428,6 +535,11 @@ Options:
   // 处理文章
   let articles = deduplicate(allArticles);
   console.log(`📝 After dedup: ${articles.length}`);
+
+  const undatedCount = articles.filter((a) => !(a.pubDate instanceof Date) || Number.isNaN(a.pubDate.getTime())).length;
+  if (undatedCount > 0) {
+    console.log(`⚠️ Dropped undated articles: ${undatedCount}`);
+  }
 
   articles = filterArticles(articles, options.hours);
   console.log(`⏰ After time filter: ${articles.length}`);

@@ -4,94 +4,82 @@
 
 ## 📊 数据概览
 
-- **文章总数**: 235
-- **来源**: 12 blogs
+- **文章总数**: 16
+- **来源**: 11 blogs
 - **时间范围**: 24h
 
 ### 分类分布
 
-- 📝 其他: 211
-- 🤖 AI / ML: 18
-- 🔒 安全: 4
-- 💡 观点 / 杂谈: 1
+- 🤖 AI / ML: 8
+- 📝 其他: 7
 - 🛠 工具 / 开源: 1
 
 ## 🔥 热门文章
 
-### 1. 📝 [超线性回报](http://www.paulgraham.com/superlinear.html)
-- 来源: paulgraham.com
-- 中文摘要: 超线性回报
+### 1. 📝 [★ iPhone 17e](https://daringfireball.net/2026/03/the_iphone_17e)
+- 来源: daringfireball.net
+- 中文总结：这篇文章围绕《★ iPhone 17e》展开，核心要点是：苹果本可以仅通过添加 MagSafe 来阻止这一点，而且 17e 相对于 16e 来说将是一次成功的逐年更新。但还有更多。
 
-### 2. 📝 [如何做好工作](http://www.paulgraham.com/greatwork.html)
-- 来源: paulgraham.com
-- 中文摘要: 如何做好工作
+### 2. 🤖 [[赞助商] 决赛入围者](https://www.finalist.works/finalist-36/)
+- 来源: daringfireball.net
+- 中文总结：这篇文章围绕《[赞助商] 决赛入围者》展开，核心要点是：您一整天都在一个屏幕上。 Finalist 是一款 iOS/macOS 日程规划工具，可提取您的日历、提醒和健康数据，确保一切顺利。最新版本现已推出，并添加了子任务、日历书签、日记中的 HealthKit 以及可从锁定屏幕触发的每日口头简报。将其与您已使用的内容一起运行。它会悄悄地拾取您当前设置未拾取的内容。在 App Store 上免费试用，提供终身许可证。 ★。
 
-### 3. 📝 [如何获得新想法](http://www.paulgraham.com/getideas.html)
-- 来源: paulgraham.com
-- 中文摘要: 如何获得新想法
+### 3. 🤖 [MacBook Neo 壁纸现已适用于 MacOS Tahoe 中的所有 Mac](https://www.macrumors.com/2026/03/09/macos-tahoe-26-4-beta-4-neo-wallpapers/)
+- 来源: daringfireball.net
+- 中文总结：这篇文章围绕《MacBook Neo 壁纸现已适用于 MacOS Tahoe 中的所有 Mac》展开，核心要点是：Juli Clover，MacRumors：壁纸采用带有彩色渐变的气泡式线条，有 Mac 紫色、Mac 蓝色、Mac 粉色和 Mac 黄色。设计和颜色拼出了“Mac”这个词。他们抓住了我。我现在要升级到 Tahoe。 ★。
 
-### 4. 📝 [阅读的必要性](http://www.paulgraham.com/read.html)
-- 来源: paulgraham.com
-- 中文摘要: 阅读的必要性
+### 4. 📝 [三角函数组合表](https://www.johndcook.com/blog/2026/03/09/trig-composition-table/)
+- 来源: johndcook.com
+- 中文总结：这篇文章围绕《三角函数组合表》展开，核心要点是：我写了几篇参考下表的文章。您可以通过包含 sec、csc、cot 及其逆来制作一个更大的表（6 × 6），正如 Baker 在他的文章 [1] 中所做的那样。请注意，第 4、5 和 6 行是第 1、2 和 3 行的倒数。回到主题 [...] 后 Trig 组合表首次出现在 John D. Cook 上。
 
-### 5. 📝 [你（想要）*想要什么](http://www.paulgraham.com/want.html)
-- 来源: paulgraham.com
-- 中文摘要: 你（想要）*想要什么
+### 5. 🤖 [克劳德代码、克劳德 Cowork 和 Codex #5](https://thezvi.wordpress.com/2026/03/09/claude-code-claude-cowork-and-codex-5/)
+- 来源: thezvi.wordpress.com
+- 中文总结：这篇文章围绕《克劳德代码、克劳德 Cowork 和 Codex #5》展开，核心要点是：回到一些有趣的事情感觉很好。除了我的 Twitter 帖子之外，这里的评论还可以作为 GPT-5.4 反应的地方。我希望尽快得到该评论。几乎所有... 继续阅读 →。
 
-### 6. 📝 [外星真相](http://www.paulgraham.com/alien.html)
-- 来源: paulgraham.com
-- 中文摘要: 外星真相
+### 6. 🤖 [多元化：亿万富翁对他们自己和（尤其是）我们来说都是危险（2026 年 3 月 9 日）](https://pluralistic.net/2026/03/09/autocrats-of-trade-2/)
+- 来源: pluralistic.net
+- 中文总结：这篇文章围绕《多元化：亿万富翁对他们自己和（尤其是）我们来说都是危险（2026 年 3 月 9 日）》展开，核心要点是：今天的链接 亿万富翁对他们自己和（尤其是）我们来说都是一种危险：亿万富翁是一台大规模生产政策失败的机器。嘿，看看这个：很高兴享受。对象持久性：图书馆员反对 DRM；版权最大化主义者 MP 是盗版者； “怪物”​​；自毁电子书的反常；太空歌剧陈词滥调；社交软件政治；在浏览器的地址栏中进行游戏； sf/f地图；群聊很糟糕；吉普车黑客；甘德酱。即将露面：在哪里可以找到我。记录。
 
-### 7. 📝 [我从用户那里学到了什么](http://www.paulgraham.com/users.html)
-- 来源: paulgraham.com
-- 中文摘要: 我从用户那里学到了什么
+### 7. 🤖 [Anthropic 起诉美国政府，理由充分](https://garymarcus.substack.com/p/anthropic-sues-us-government-with)
+- 来源: garymarcus.substack.com
+- 中文总结：这篇文章围绕《Anthropic 起诉美国政府，理由充分》展开，核心要点是：正如我昨天所写，达里奥·阿莫迪不是圣人，但我完全支持他的公司针对美国政府的新诉讼。
 
-### 8. 📝 [异端](http://www.paulgraham.com/heresy.html)
-- 来源: paulgraham.com
-- 中文摘要: 异端
+### 8. 📝 [无生产数据的生产查询计划](https://simonwillison.net/2026/Mar/9/production-query-plans-without-production-data/#atom-everything)
+- 来源: simonwillison.net
+- 中文总结：这篇文章围绕《无生产数据的生产查询计划》展开，核心要点是：没有生产数据的生产查询计划 Radim Marek 描述了 2025 年 9 月在 PostgreSQL 18 中引入的新 pg_restore_relation_stats() 和 pg_restore_attribute_stats() 函数。PostgreSQL 查询规划器利用内部统计信息来帮助它决定如何最好地执行查询。这些统计信息在生产数据和开发环境之间通常有所不同，这意味着生产中使用的查询计划可能无法在开发中复制。 Postg...
 
-### 9. 📝 [将想法付诸文字](http://www.paulgraham.com/words.html)
-- 来源: paulgraham.com
-- 中文摘要: 将想法付诸文字
+### 9. 🤖 [肯尼亚的低工资承包商在使用 Meta 的 AI 智能眼镜时看到了用户所看到的内容](https://www.svd.se/a/K8nrV4/metas-ai-smart-glasses-and-data-privacy-concerns-workers-say-we-see-everything)
+- 来源: daringfireball.net
+- 中文总结：这篇文章围绕《肯尼亚的低工资承包商在使用 Meta 的 AI 智能眼镜时看到了用户所看到的内容》展开，核心要点是：Naipanoi Lepapa、Ahmed Abdigadir 和 Julia Lindblom 为瑞典出版物 Svenska Dagbladet 和 Göteborgs-Posten 报道： 肯尼亚内罗毕酒店的顶层很闷热。灰色的天空将热量压在窗户上。我们面前的这个人很紧张。如果他的雇主发现他在这里，他可能会失去一切。他是很少有人意识到存在的人之一——数据行业引擎室里有血有肉的工人。他所说的话具有爆炸性。 “在一些。
 
-### 10. 📝 [有没有所谓的“好品味”？](http://www.paulgraham.com/goodtaste.html)
-- 来源: paulgraham.com
-- 中文摘要: 有没有所谓的“好品味”？
+### 10. 📝 [细则给予，粗体则取消：倒计时器](https://devblogs.microsoft.com/oldnewthing/20260309-01/?p=112120)
+- 来源: devblogs.microsoft.com/oldnewthing
+- 中文总结：这篇文章围绕《细则给予，粗体则取消：倒计时器》展开，核心要点是：思考快，没有压力。细则给出，粗体去掉：倒计时器首先出现在《旧新事物》上。
 
-### 11. 📝 [超越智能](http://www.paulgraham.com/smart.html)
-- 来源: paulgraham.com
-- 中文摘要: 超越智能
+### 11. 📝 [学习读取 C++ 编译器错误：不明确的重载运算符](https://devblogs.microsoft.com/oldnewthing/20260309-00/?p=112118)
+- 来源: devblogs.microsoft.com/oldnewthing
+- 中文总结：这篇文章围绕《学习读取 C++ 编译器错误：不明确的重载运算符》展开，核心要点是：寻找相互冲突的定义，看看它们来自哪里。学习阅读 C++ 编译器错误：不明确的重载运算符一文首先出现在 The Old New Thing 上。
 
-### 12. 📝 [奇怪的语言](http://www.paulgraham.com/weird.html)
-- 来源: paulgraham.com
-- 中文摘要: 奇怪的语言
+### 12. 🤖 [也许毕竟不是无聊的技术](https://simonwillison.net/2026/Mar/9/not-so-boring/#atom-everything)
+- 来源: simonwillison.net
+- 中文总结：这篇文章围绕《也许毕竟不是无聊的技术》展开，核心要点是：我看到的关于编程法学硕士的一个反复出现的担忧是，他们会将我们的技术选择推向在其培训数据中最能体现的工具，从而使新的、更好的工具更难突破噪音。几年前的情况确实如此，当时向模型寻求有关 Python 或 JavaScript 的帮助似乎比询问不太广泛使用的语言给出的结果要好得多。随着最新模型在良好的编码代理线束中运行，我n。
 
-### 13. 📝 [如何努力工作](http://www.paulgraham.com/hwh.html)
-- 来源: paulgraham.com
-- 中文摘要: 如何努力工作
+### 13. 📝 [书评：没有逆模因部门，作者：qntm ★★★★★](https://shkspr.mobi/blog/2026/03/book-review-there-is-no-antimemetics-division-by-qntm/)
+- 来源: shkspr.mobi
+- 中文总结：这篇文章围绕《书评：没有逆模因部门，作者：qntm ★★★★★》展开，核心要点是：显然我四年前就读过这本书的前一版本，但对它没有真正的记忆。你是否曾经做过一个非常现实但又与现实稍有偏差的梦？显然不存在逆模因部门，也没有人能写一本关于它的书。如果这样做，他们的心智就会立刻被液化，他们的存在就会被净化。那么，为什么会有一个……。
 
-### 14. 📝 [自己的项目](http://www.paulgraham.com/own.html)
-- 来源: paulgraham.com
-- 中文摘要: 自己的项目
+### 14. 🤖 [你说我为什么偏执？](https://idiallo.com/blog/why-am-i-paranoid?src=feed)
+- 来源: idiallo.com
+- 中文总结：这篇文章围绕《你说我为什么偏执？》展开，核心要点是：技术已经进步到我小时候只能梦想的程度。您最近看过电子游戏中的图形吗？在两秒内从零加速到 60 英里每小时？只需按一下按钮即可与世界各地的任何人进行交流？至少可以说，这令人难以置信。但每次我拿起电视遥控器并拒绝服务条款时，我的家人都会感到困惑。我通常无法用语言向他们解释我的偏执，但让我尝试一下。我很想拥有所有功能。
 
-### 15. 📝 [激烈的书呆子](http://www.paulgraham.com/fn.html)
-- 来源: paulgraham.com
-- 中文摘要: 激烈的书呆子
+### 15. 🛠 [IBM PC/XT 型号 5160](https://dfarq.homeip.net/ibm-pc-xt-model-5160/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ibm-pc-xt-model-5160)
+- 来源: dfarq.homeip.net
+- 中文总结：这篇文章围绕《IBM PC/XT 型号 5160》展开，核心要点是：1983 年 3 月 8 日，IBM 发布了其非常成功的 IBM PC 的后续产品。新型号称为 PC/XT，型号为 5160。“XT”代表“扩展技术”。它提供了比 The Silicon Underground 上首次出现的 IBM PC/XT Model 5160 更大的可扩展性。
 
 ## 📑 分类列表
 
 ### 🤖 AI / ML
 
-- [亿万富翁打造](http://www.paulgraham.com/ace.html) · paulgraham.com
-- [爱彼迎 (Airbnb)](http://www.paulgraham.com/airbnbs.html) · paulgraham.com
-- [这是 Microsoft 的 Altair Basic 吗？](http://www.paulgraham.com/altair.html) · paulgraham.com
-- [卑鄙的人会失败](http://www.paulgraham.com/mean.html) · paulgraham.com
-- [如何筹集资金](http://www.paulgraham.com/fr.html) · paulgraham.com
-- [硬件复兴](http://www.paulgraham.com/hw.html) · paulgraham.com
-- [主题：爱彼迎](http://www.paulgraham.com/airbnb.html) · paulgraham.com
-- [高分辨率筹款](http://www.paulgraham.com/hiresfund.html) · paulgraham.com
-- [筹款生存指南](http://www.paulgraham.com/fundraising.html) · paulgraham.com
-- [黑客和画家](http://www.paulgraham.com/hp.html) · paulgraham.com
 - [[赞助商] 决赛入围者](https://www.finalist.works/finalist-36/) · daringfireball.net
 - [MacBook Neo 壁纸现已适用于 MacOS Tahoe 中的所有 Mac](https://www.macrumors.com/2026/03/09/macos-tahoe-26-4-beta-4-neo-wallpapers/) · daringfireball.net
 - [克劳德代码、克劳德 Cowork 和 Codex #5](https://thezvi.wordpress.com/2026/03/09/claude-code-claude-cowork-and-codex-5/) · thezvi.wordpress.com
@@ -101,227 +89,12 @@
 - [也许毕竟不是无聊的技术](https://simonwillison.net/2026/Mar/9/not-so-boring/#atom-everything) · simonwillison.net
 - [你说我为什么偏执？](https://idiallo.com/blog/why-am-i-paranoid?src=feed) · idiallo.com
 
-### 🔒 安全
-
-- [我从黑客新闻中学到了什么](http://www.paulgraham.com/hackernews.html) · paulgraham.com
-- [黑客投资者指南](http://www.paulgraham.com/guidetoinvestors.html) · paulgraham.com
-- [伟大的黑客](http://www.paulgraham.com/gh.html) · paulgraham.com
-- [“黑客”这个词](http://www.paulgraham.com/gba.html) · paulgraham.com
-
 ### 🛠 工具 / 开源
 
 - [IBM PC/XT 型号 5160](https://dfarq.homeip.net/ibm-pc-xt-model-5160/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ibm-pc-xt-model-5160) · dfarq.homeip.net
 
-### 💡 观点 / 杂谈
-
-- [散文时代](http://www.paulgraham.com/essay.html) · paulgraham.com
-
 ### 📝 其他
 
-- [超线性回报](http://www.paulgraham.com/superlinear.html) · paulgraham.com
-- [如何做好工作](http://www.paulgraham.com/greatwork.html) · paulgraham.com
-- [如何获得新想法](http://www.paulgraham.com/getideas.html) · paulgraham.com
-- [阅读的必要性](http://www.paulgraham.com/read.html) · paulgraham.com
-- [你（想要）*想要什么](http://www.paulgraham.com/want.html) · paulgraham.com
-- [外星真相](http://www.paulgraham.com/alien.html) · paulgraham.com
-- [我从用户那里学到了什么](http://www.paulgraham.com/users.html) · paulgraham.com
-- [异端](http://www.paulgraham.com/heresy.html) · paulgraham.com
-- [将想法付诸文字](http://www.paulgraham.com/words.html) · paulgraham.com
-- [有没有所谓的“好品味”？](http://www.paulgraham.com/goodtaste.html) · paulgraham.com
-- [超越智能](http://www.paulgraham.com/smart.html) · paulgraham.com
-- [奇怪的语言](http://www.paulgraham.com/weird.html) · paulgraham.com
-- [如何努力工作](http://www.paulgraham.com/hwh.html) · paulgraham.com
-- [自己的项目](http://www.paulgraham.com/own.html) · paulgraham.com
-- [激烈的书呆子](http://www.paulgraham.com/fn.html) · paulgraham.com
-- [疯狂的新想法](http://www.paulgraham.com/newideas.html) · paulgraham.com
-- [拯救生命的 NFT](http://www.paulgraham.com/nft.html) · paulgraham.com
-- [终止死刑的真正原因](http://www.paulgraham.com/real.html) · paulgraham.com
-- [现在人们如何致富](http://www.paulgraham.com/richnow.html) · paulgraham.com
-- [写得简单](http://www.paulgraham.com/simply.html) · paulgraham.com
-- [捐赠不受限制](http://www.paulgraham.com/donate.html) · paulgraham.com
-- [我的工作内容](http://www.paulgraham.com/worked.html) · paulgraham.com
-- [认真](http://www.paulgraham.com/earnest.html) · paulgraham.com
-- [如何独立思考](http://www.paulgraham.com/think.html) · paulgraham.com
-- [早期工作](http://www.paulgraham.com/early.html) · paulgraham.com
-- [财富税建模](http://www.paulgraham.com/wtax.html) · paulgraham.com
-- [因循守旧的四个象限](http://www.paulgraham.com/conformism.html) · paulgraham.com
-- [东正教特权](http://www.paulgraham.com/orth.html) · paulgraham.com
-- [冠状病毒和可信度](http://www.paulgraham.com/cred.html) · paulgraham.com
-- [如何有效写作](http://www.paulgraham.com/useful.html) · paulgraham.com
-- [成为菜鸟](http://www.paulgraham.com/noob.html) · paulgraham.com
-- [仇恨者](http://www.paulgraham.com/fh.html) · paulgraham.com
-- [两种温和](http://www.paulgraham.com/mod.html) · paulgraham.com
-- [时尚问题](http://www.paulgraham.com/fp.html) · paulgraham.com
-- [有孩子](http://www.paulgraham.com/kids.html) · paulgraham.com
-- [需要忘记的教训](http://www.paulgraham.com/lesson.html) · paulgraham.com
-- [新奇与异端](http://www.paulgraham.com/nov.html) · paulgraham.com
-- [天才的巴士票理论](http://www.paulgraham.com/genius.html) · paulgraham.com
-- [一般且令人惊讶](http://www.paulgraham.com/sun.html) · paulgraham.com
-- [魅力/力量](http://www.paulgraham.com/pow.html) · paulgraham.com
-- [发现的风险](http://www.paulgraham.com/disc.html) · paulgraham.com
-- [如何使匹兹堡成为创业中心](http://www.paulgraham.com/pgh.html) · paulgraham.com
-- [生命短暂](http://www.paulgraham.com/vb.html) · paulgraham.com
-- [经济不平等](http://www.paulgraham.com/ineq.html) · paulgraham.com
-- [重组](http://www.paulgraham.com/re.html) · paulgraham.com
-- [杰西卡·利文斯顿](http://www.paulgraham.com/jessica.html) · paulgraham.com
-- [检测偏差的方法](http://www.paulgraham.com/bias.html) · paulgraham.com
-- [像说话一样写作](http://www.paulgraham.com/talk.html) · paulgraham.com
-- [默认存活还是默认死亡？](http://www.paulgraham.com/aord.html) · paulgraham.com
-- [为什么创始人保持友善是安全的](http://www.paulgraham.com/safe.html) · paulgraham.com
-- [更改你的名字](http://www.paulgraham.com/name.html) · paulgraham.com
-- [龙科原则](http://www.paulgraham.com/ronco.html) · paulgraham.com
-- [什么看起来不起作用？](http://www.paulgraham.com/work.html) · paulgraham.com
-- [不要与公司开发人员交谈](http://www.paulgraham.com/corpdev.html) · paulgraham.com
-- [让其他 95% 的优秀程序员加入](http://www.paulgraham.com/95.html) · paulgraham.com
-- [如何成为不断变化的世界中的专家](http://www.paulgraham.com/ecw.html) · paulgraham.com
-- [你怎么知道的](http://www.paulgraham.com/know.html) · paulgraham.com
-- [致命的困境](http://www.paulgraham.com/pinch.html) · paulgraham.com
-- [启动前](http://www.paulgraham.com/before.html) · paulgraham.com
-- [投资者群体动态](http://www.paulgraham.com/herd.html) · paulgraham.com
-- [如何说服投资者](http://www.paulgraham.com/convince.html) · paulgraham.com
-- [做一些无法扩展的事情](http://www.paulgraham.com/ds.html) · paulgraham.com
-- [初创公司投资趋势](http://www.paulgraham.com/invtrend.html) · paulgraham.com
-- [如何获得创业想法](http://www.paulgraham.com/startupideas.html) · paulgraham.com
-- [初创=成长](http://www.paulgraham.com/growth.html) · paulgraham.com
-- [黑天鹅养殖](http://www.paulgraham.com/swan.html) · paulgraham.com
-- [我的待办事项列表的顶部](http://www.paulgraham.com/todo.html) · paulgraham.com
-- [写作和口语](http://www.paulgraham.com/speak.html) · paulgraham.com
-- [Y Combinator 是如何开始的](http://www.paulgraham.com/ycstart.html) · paulgraham.com
-- [定义属性](http://www.paulgraham.com/property.html) · paulgraham.com
-- [雄心勃勃的创业想法](http://www.paulgraham.com/ambitious.html) · paulgraham.com
-- [给足智多谋的一句话](http://www.paulgraham.com/word.html) · paulgraham.com
-- [施莱普失明](http://www.paulgraham.com/schlep.html) · paulgraham.com
-- [快照：Viaweb，1998 年 6 月](http://www.paulgraham.com/vw.html) · paulgraham.com
-- [为什么创业中心有效](http://www.paulgraham.com/hubs.html) · paulgraham.com
-- [专利承诺](http://www.paulgraham.com/patentpledge.html) · paulgraham.com
-- [方正控制](http://www.paulgraham.com/control.html) · paulgraham.com
-- [平板电脑](http://www.paulgraham.com/tablets.html) · paulgraham.com
-- [我们在创始人身上寻找什么](http://www.paulgraham.com/founders.html) · paulgraham.com
-- [新的融资格局](http://www.paulgraham.com/superangels.html) · paulgraham.com
-- [去哪里参观硅谷](http://www.paulgraham.com/seesv.html) · paulgraham.com
-- [雅虎发生了什​​么](http://www.paulgraham.com/yahoo.html) · paulgraham.com
-- [初创企业融资的未来](http://www.paulgraham.com/future.html) · paulgraham.com
-- [上瘾的加速](http://www.paulgraham.com/addiction.html) · paulgraham.com
-- [你脑海中最重要的想法](http://www.paulgraham.com/top.html) · paulgraham.com
-- [如何浪费时间和金钱](http://www.paulgraham.com/selfindulgence.html) · paulgraham.com
-- [有机创业想法](http://www.paulgraham.com/organic.html) · paulgraham.com
-- [苹果的错误](http://www.paulgraham.com/apple.html) · paulgraham.com
-- [初创公司到底是什么样的](http://www.paulgraham.com/really.html) · paulgraham.com
-- [说服 xor 发现](http://www.paulgraham.com/discover.html) · paulgraham.com
-- [后媒体出版](http://www.paulgraham.com/publishing.html) · paulgraham.com
-- [N 件事清单](http://www.paulgraham.com/nthings.html) · paulgraham.com
-- [决心的剖析](http://www.paulgraham.com/determination.html) · paulgraham.com
-- [凯特在硅谷看到了什么](http://www.paulgraham.com/kate.html) · paulgraham.com
-- [赛格威的麻烦](http://www.paulgraham.com/segway.html) · paulgraham.com
-- [拉面盈利](http://www.paulgraham.com/ramenprofitable.html) · paulgraham.com
-- [制造商的日程、管理者的日程](http://www.paulgraham.com/makersschedule.html) · paulgraham.com
-- [地方革命？](http://www.paulgraham.com/revolution.html) · paulgraham.com
-- [为什么推特很重要](http://www.paulgraham.com/twitter.html) · paulgraham.com
-- [创始人签证](http://www.paulgraham.com/foundervisa.html) · paulgraham.com
-- [五位创始人](http://www.paulgraham.com/5founders.html) · paulgraham.com
-- [足智多谋](http://www.paulgraham.com/relres.html) · paulgraham.com
-- [如何成为天使投资人](http://www.paulgraham.com/angelinvesting.html) · paulgraham.com
-- [电视为什么会丢失](http://www.paulgraham.com/convergence.html) · paulgraham.com
-- [你能买下硅谷吗？或许。](http://www.paulgraham.com/maybe.html) · paulgraham.com
-- [13 句话讲述初创企业](http://www.paulgraham.com/13sentences.html) · paulgraham.com
-- [保持你的身份小](http://www.paulgraham.com/identity.html) · paulgraham.com
-- [凭证之后](http://www.paulgraham.com/credentials.html) · paulgraham.com
-- [风险投资会成为经济衰退的受害者吗？](http://www.paulgraham.com/divergence.html) · paulgraham.com
-- [高分辨率协会](http://www.paulgraham.com/highres.html) · paulgraham.com
-- [“艺术家船”的另一半](http://www.paulgraham.com/artistsship.html) · paulgraham.com
-- [为什么要在经济不景气的情况下创业](http://www.paulgraham.com/badeconomy.html) · paulgraham.com
-- [联合风险公司管理公司](http://www.paulgraham.com/prcmc.html) · paulgraham.com
-- [城市与野心](http://www.paulgraham.com/cities.html) · paulgraham.com
-- [断开干扰](http://www.paulgraham.com/distraction.html) · paulgraham.com
-- [我们告诉孩子的谎言](http://www.paulgraham.com/lies.html) · paulgraham.com
-- [做好人](http://www.paulgraham.com/good.html) · paulgraham.com
-- [为什么没有更多的谷歌](http://www.paulgraham.com/googles.html) · paulgraham.com
-- [一些英雄](http://www.paulgraham.com/heroes.html) · paulgraham.com
-- [如何表达不同意见](http://www.paulgraham.com/disagree.html) · paulgraham.com
-- [你不应该有一个老板](http://www.paulgraham.com/boss.html) · paulgraham.com
-- [一种新的冒险动物](http://www.paulgraham.com/ycombinator.html) · paulgraham.com
-- [巨魔](http://www.paulgraham.com/trolls.html) · paulgraham.com
-- [创造新事物的六大原则](http://www.paulgraham.com/newthings.html) · paulgraham.com
-- [为什么要搬到创业中心](http://www.paulgraham.com/startuphubs.html) · paulgraham.com
-- [网络初创公司的未来](http://www.paulgraham.com/webstartups.html) · paulgraham.com
-- [如何做哲学](http://www.paulgraham.com/philosophy.html) · paulgraham.com
-- [前线消息](http://www.paulgraham.com/colleges.html) · paulgraham.com
-- [如何不死](http://www.paulgraham.com/die.html) · paulgraham.com
-- [脑子里有一个计划](http://www.paulgraham.com/head.html) · paulgraham.com
-- [东西](http://www.paulgraham.com/stuff.html) · paulgraham.com
-- [权益方程](http://www.paulgraham.com/equity.html) · paulgraham.com
-- [另一种联合理论](http://www.paulgraham.com/unions.html) · paulgraham.com
-- [两种判断](http://www.paulgraham.com/judgement.html) · paulgraham.com
-- [微软已死](http://www.paulgraham.com/microsoft.html) · paulgraham.com
-- [为什么不开始创业](http://www.paulgraham.com/notnot.html) · paulgraham.com
-- [值得明智吗？](http://www.paulgraham.com/wisdom.html) · paulgraham.com
-- [向创始人学习](http://www.paulgraham.com/foundersatwork.html) · paulgraham.com
-- [艺术如何才能优秀](http://www.paulgraham.com/goodart.html) · paulgraham.com
-- [杀死初创公司的 18 个错误](http://www.paulgraham.com/startupmistakes.html) · paulgraham.com
-- [学生创业指南](http://www.paulgraham.com/mit.html) · paulgraham.com
-- [如何向投资者展示](http://www.paulgraham.com/investors.html) · paulgraham.com
-- [复制你喜欢的内容](http://www.paulgraham.com/copy.html) · paulgraham.com
-- [岛屿测试](http://www.paulgraham.com/island.html) · paulgraham.com
-- [边缘人的力量](http://www.paulgraham.com/marginal.html) · paulgraham.com
-- [为什么初创企业集中在美国](http://www.paulgraham.com/america.html) · paulgraham.com
-- [如何成为硅谷](http://www.paulgraham.com/siliconvalley.html) · paulgraham.com
-- [初创公司最难学的教训](http://www.paulgraham.com/startuplessons.html) · paulgraham.com
-- [参见随机性](http://www.paulgraham.com/randomness.html) · paulgraham.com
-- [软件专利是邪恶的吗？](http://www.paulgraham.com/softwarepatents.html) · paulgraham.com
-- [6,631,372](http://www.paulgraham.com/6631327.html) · paulgraham.com
-- [为什么选择YC](http://www.paulgraham.com/whyyc.html) · paulgraham.com
-- [如何做你喜欢做的事](http://www.paulgraham.com/love.html) · paulgraham.com
-- [好的拖延和坏的拖延](http://www.paulgraham.com/procrastination.html) · paulgraham.com
-- [网络2.0](http://www.paulgraham.com/web20.html) · paulgraham.com
-- [如何为初创公司提供资金](http://www.paulgraham.com/startupfunding.html) · paulgraham.com
-- [风险投资的挤压](http://www.paulgraham.com/vcsqueeze.html) · paulgraham.com
-- [初创公司的想法](http://www.paulgraham.com/ideas.html) · paulgraham.com
-- [今年夏天我做了什么](http://www.paulgraham.com/sfp.html) · paulgraham.com
-- [不平等与风险](http://www.paulgraham.com/inequality.html) · paulgraham.com
-- [梯子之后](http://www.paulgraham.com/ladder.html) · paulgraham.com
-- [企业可以从开源中学到什么](http://www.paulgraham.com/opensource.html) · paulgraham.com
-- [招聘已过时](http://www.paulgraham.com/hiring.html) · paulgraham.com
-- [潜艇](http://www.paulgraham.com/submarine.html) · paulgraham.com
-- [为什么聪明人有坏主意](http://www.paulgraham.com/bronze.html) · paulgraham.com
-- [Mac 的回归](http://www.paulgraham.com/mac.html) · paulgraham.com
-- [写作，简短](http://www.paulgraham.com/writing44.html) · paulgraham.com
-- [本科](http://www.paulgraham.com/college.html) · paulgraham.com
-- [VC吸力的统一理论](http://www.paulgraham.com/venturecapital.html) · paulgraham.com
-- [如何开始创业](http://www.paulgraham.com/start.html) · paulgraham.com
-- [你希望知道什么](http://www.paulgraham.com/hs.html) · paulgraham.com
-- [美国制造](http://www.paulgraham.com/usa.html) · paulgraham.com
-- [这是魅力，愚蠢](http://www.paulgraham.com/charisma.html) · paulgraham.com
-- [布拉德利的幽灵](http://www.paulgraham.com/polls.html) · paulgraham.com
-- [1.0版本](http://www.paulgraham.com/laundry.html) · paulgraham.com
-- [泡沫的正确之处](http://www.paulgraham.com/bubble.html) · paulgraham.com
-- [Python悖论](http://www.paulgraham.com/pypar.html) · paulgraham.com
-- [注意差距](http://www.paulgraham.com/gap.html) · paulgraham.com
-- [如何致富](http://www.paulgraham.com/wealth.html) · paulgraham.com
-- [你不能说的话](http://www.paulgraham.com/say.html) · paulgraham.com
-- [反击过滤器](http://www.paulgraham.com/ffb.html) · paulgraham.com
-- [如果 Lisp 有那么伟大](http://www.paulgraham.com/iflisp.html) · paulgraham.com
-- [百年语言](http://www.paulgraham.com/hundred.html) · paulgraham.com
-- [为什么书呆子不受欢迎](http://www.paulgraham.com/nerds.html) · paulgraham.com
-- [更好的贝叶斯过滤](http://www.paulgraham.com/better.html) · paulgraham.com
-- [设计与研究](http://www.paulgraham.com/desres.html) · paulgraham.com
-- [垃圾邮件计划](http://www.paulgraham.com/spam.html) · paulgraham.com
-- [书呆子的复仇](http://www.paulgraham.com/icad.html) · paulgraham.com
-- [简洁就是力量](http://www.paulgraham.com/power.html) · paulgraham.com
-- [修复哪些语言](http://www.paulgraham.com/fix.html) · paulgraham.com
-- [创客品味](http://www.paulgraham.com/taste.html) · paulgraham.com
-- [为什么 Arc 不是特别面向对象](http://www.paulgraham.com/noop.html) · paulgraham.com
-- [是什么让 Lisp 与众不同](http://www.paulgraham.com/diff.html) · paulgraham.com
-- [前方的另一条路](http://www.paulgraham.com/road.html) · paulgraham.com
-- [Lisp 的根源](http://www.paulgraham.com/rootsoflisp.html) · paulgraham.com
-- [关于语言设计的五个问题](http://www.paulgraham.com/langdes.html) · paulgraham.com
-- [受欢迎](http://www.paulgraham.com/popular.html) · paulgraham.com
-- [Java 的封面](http://www.paulgraham.com/javacover.html) · paulgraham.com
-- [击败平均水平](http://www.paulgraham.com/avg.html) · paulgraham.com
-- [用于基于 Web 的应用程序的 Lisp](http://www.paulgraham.com/lwba.html) · paulgraham.com
-- [Ansi Common Lisp 第 1 章](http://www.paulgraham.com/https://sep.turbifycdn.com/ty/cdn/paulgraham/acl1.txt?t=1702479238&amp;) · paulgraham.com
-- [Ansi Common Lisp 第 2 章](http://www.paulgraham.com/https://sep.turbifycdn.com/ty/cdn/paulgraham/acl2.txt?t=1702479238&amp;) · paulgraham.com
-- [自下而上编程](http://www.paulgraham.com/progbot.html) · paulgraham.com
-- [今年我们可以在加州终止死刑](http://www.paulgraham.com/prop62.html) · paulgraham.com
 - [★ iPhone 17e](https://daringfireball.net/2026/03/the_iphone_17e) · daringfireball.net
 - [三角函数组合表](https://www.johndcook.com/blog/2026/03/09/trig-composition-table/) · johndcook.com
 - [无生产数据的生产查询计划](https://simonwillison.net/2026/Mar/9/production-query-plans-without-production-data/#atom-everything) · simonwillison.net
