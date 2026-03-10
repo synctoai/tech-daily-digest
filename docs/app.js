@@ -1,5 +1,4 @@
 let allItems = [];
-let currentLang = 'all';
 
 async function loadIndex() {
   const res = await fetch('./data/index.json');
@@ -22,21 +21,6 @@ function escapeHtml(text) {
     .replaceAll("'", '&#039;');
 }
 
-function formatLang(lang) {
-  return lang === 'en' ? 'EN' : 'ZH';
-}
-
-function getFilteredItems() {
-  return currentLang === 'all' ? allItems : allItems.filter((it) => it.lang === currentLang);
-}
-
-function setActiveFilter(lang) {
-  currentLang = lang;
-  document.querySelectorAll('.chip').forEach((btn) => {
-    btn.classList.toggle('active', btn.dataset.lang === lang);
-  });
-}
-
 function setActiveListButton(button) {
   document.querySelectorAll('#list button').forEach((b) => b.classList.remove('active'));
   if (button) button.classList.add('active');
@@ -44,11 +28,7 @@ function setActiveListButton(button) {
 
 function renderMeta(item) {
   const total = item.articleCount > 0 ? item.articleCount : '-';
-  document.getElementById('meta').innerHTML = [
-    `<span class="mono">${escapeHtml(item.date)}</span>`,
-    `<span class="badge">${formatLang(item.lang)}</span>`,
-    `· ${total} 篇`
-  ].join(' ');
+  document.getElementById('meta').innerHTML = `<span class="mono">${escapeHtml(item.date)}</span> · ${total} 篇`;
 }
 
 async function showItem(item) {
@@ -60,24 +40,22 @@ async function showItem(item) {
 
 function renderListAndBind() {
   const list = document.getElementById('list');
-  const items = getFilteredItems();
   list.innerHTML = '';
 
-  if (items.length === 0) {
-    document.getElementById('content').textContent = '当前筛选条件下暂无日报内容';
+  if (allItems.length === 0) {
+    document.getElementById('content').textContent = '暂无日报内容';
     document.getElementById('meta').textContent = '';
     return;
   }
 
-  items.forEach((it, idx) => {
+  allItems.forEach((it, idx) => {
     const li = document.createElement('li');
     const btn = document.createElement('button');
     if (idx === 0) btn.classList.add('active');
 
     const safeTitle = escapeHtml(it.title || 'Untitled');
     btn.innerHTML = `
-      <strong class="mono">${escapeHtml(it.date)}</strong>
-      <span class="badge">${formatLang(it.lang)}</span><br />
+      <strong class="mono">${escapeHtml(it.date)}</strong><br />
       <small>${safeTitle.slice(0, 72)}${safeTitle.length > 72 ? '…' : ''}</small>
     `;
 
@@ -90,18 +68,8 @@ function renderListAndBind() {
     list.appendChild(li);
   });
 
-  showItem(items[0]).catch((e) => {
+  showItem(allItems[0]).catch((e) => {
     document.getElementById('content').textContent = `加载失败：${e.message}`;
-  });
-}
-
-function bindFilters() {
-  document.querySelectorAll('.chip').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const lang = btn.dataset.lang || 'all';
-      setActiveFilter(lang);
-      renderListAndBind();
-    });
   });
 }
 
@@ -109,13 +77,6 @@ function bindFilters() {
   try {
     const { items } = await loadIndex();
     allItems = Array.isArray(items) ? items : [];
-
-    if (allItems.length === 0) {
-      document.getElementById('content').textContent = '暂无日报内容';
-      return;
-    }
-
-    bindFilters();
     renderListAndBind();
   } catch (e) {
     document.getElementById('content').textContent = `加载失败：${e.message}`;

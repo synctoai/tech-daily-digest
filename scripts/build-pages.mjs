@@ -16,15 +16,12 @@ function extractMeta(md, fileName) {
     md.match(/(\d{4}-\d{2}-\d{2})/)?.[1] ||
     'unknown';
 
-  const lang = fileName.match(/-(zh|en)\.md$/)?.[1] || 'zh';
-
   const articleCount =
     Number(md.match(/文章总数\*\*[:：]\s*(\d+)/)?.[1]) ||
-    Number(md.match(/Total(?: Articles)?\*\*:\s*(\d+)/i)?.[1]) ||
     Number(md.match(/\*\*Total(?: Articles)?\*\*:\s*(\d+)/i)?.[1]) ||
     0;
 
-  return { title, date, lang, articleCount };
+  return { title, date, articleCount };
 }
 
 async function cleanDir(dir) {
@@ -42,11 +39,11 @@ async function main() {
 
   const files = await readdir(outputDir);
   const mdFiles = files
-    .filter((f) => /^tech-digest-\d{4}-\d{2}-\d{2}-(zh|en)\.md$/.test(f))
+    .filter((f) => /^tech-digest-\d{4}-\d{2}-\d{2}-zh\.md$/.test(f))
     .sort();
 
   if (mdFiles.length === 0) {
-    throw new Error('未找到日报文件（output/tech-digest-YYYY-MM-DD-(zh|en).md）');
+    throw new Error('未找到中文日报文件（output/tech-digest-YYYY-MM-DD-zh.md）');
   }
 
   const items = [];
@@ -59,22 +56,14 @@ async function main() {
     await copyFile(source, join(dataDir, f));
 
     items.push({
-      id: `${meta.date}-${meta.lang}`,
       date: meta.date,
-      lang: meta.lang,
       title: meta.title,
       articleCount: meta.articleCount,
       md: `data/${f}`
     });
   }
 
-  items.sort((a, b) => {
-    if (a.date === b.date) {
-      if (a.lang === b.lang) return 0;
-      return a.lang === 'zh' ? -1 : 1;
-    }
-    return a.date < b.date ? 1 : -1;
-  });
+  items.sort((a, b) => (a.date < b.date ? 1 : -1));
 
   await writeFile(
     join(dataDir, 'index.json'),
