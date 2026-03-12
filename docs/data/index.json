@@ -1,6 +1,12 @@
 {
-  "generatedAt": "2026-03-11T05:16:02.503Z",
+  "generatedAt": "2026-03-12T01:17:31.460Z",
   "items": [
+    {
+      "date": "2026-03-12",
+      "title": "📰 Tech Daily Digest - 2026/3/12",
+      "articleCount": 21,
+      "md": "data/tech-digest-2026-03-12-zh.md"
+    },
     {
       "date": "2026-03-11",
       "title": "📰 Tech Daily Digest - 2026/3/11",
